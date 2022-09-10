@@ -360,6 +360,13 @@ if UseCommands then
 		DoorControl(5)
 	end, false)
 
+	-- BOMB BAY
+	TriggerEvent('chat:addSuggestion', '/bombbay', 'Open/Close Bomb Bay')
+
+	RegisterCommand("bombbay", function(source, args, rawCommand)
+		BombBayControl()
+	end, false)
+
 	-- FRONT WINDOWS
 	TriggerEvent('chat:addSuggestion', '/windowfront', 'Roll Up/Down Front Windows')
 
